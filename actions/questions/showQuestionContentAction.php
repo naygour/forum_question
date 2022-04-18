@@ -5,7 +5,7 @@ require('actions/database.php');
 if(isset($_GET['id']) && !empty($_GET['id'])){
 
     //Vérifie si la question existe
-    $idOfQuestion = intval($_GET['id']);
+    $idOfQuestion = $_GET['id'];
     $checkIfQuestionExist = $bdd->prepare('SELECT * FROM questions WHERE id = ?');
     $checkIfQuestionExist->execute([
         $idOfQuestion

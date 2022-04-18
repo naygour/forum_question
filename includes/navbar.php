@@ -9,9 +9,10 @@
         <a class="nav-link active" aria-current="page" href="index.php">Accueil</a>
         <a class="nav-link" href="publishQuestion.php">Publier une question</a>
         <a class="nav-link" href="myQuestions.php">Mes questions</a>
-
+        
         <?php if(isset($_SESSION['auth'])){
           ?>
+          <a class="nav-link" href="profile.php?id=<?= $_SESSION['id']; ?>">Mon profil</a>
           <a class="nav-link" href="actions/users/logoutAction.php">Se Déconnecter</a>
           <?php
         }

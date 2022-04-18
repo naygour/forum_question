@@ -36,7 +36,7 @@
                     <?= $question['content']?>
                 </div>
                 <div class="card-footer">
-                    Publié par <?= $question['pseudo_author']?> le <?= $question['date_publish']?>
+                    Publié par <a href="profile.php?id=<?= $question['id_author']?>"><?= $question['pseudo_author']?></a> le <?= $question['date_publish']?>
                 </div>
             </div>
             <br>

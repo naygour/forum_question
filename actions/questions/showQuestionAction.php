@@ -16,6 +16,6 @@ if(isset($_GET['search']) && !empty($_GET['search'])){
 
 }else{
 
-    echo "Aucun résultat trouvé..";
+    $errorMsg = "Aucun résultat trouvé..";
 
 }
